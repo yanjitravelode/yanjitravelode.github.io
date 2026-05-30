@@ -661,7 +661,9 @@ function renderPredictionChart(city, params) {
       }
     },
     legend: {
-      data: ['历史观测', seriesLabel, '环境容量 K'],
+      data: [seriesLabel, '环境容量 K'],
+      orient: 'vertical',
+      right: 10,
       top: 5,
       textStyle: { fontSize: 11, color: '#5A5F7A' }
     },
@@ -679,19 +681,6 @@ function renderPredictionChart(city, params) {
       splitLine: { lineStyle: { color: '#F0F2F5' } }
     },
     series: [
-      {
-        name: '历史观测',
-        type: 'scatter',
-        data: histData.map((v, i) => [histYears[i], v]),
-        symbolSize: 10,
-        itemStyle: { color: '#DA251D' },
-        markLine: {
-          silent: true,
-          label: { fontSize: 10 },
-          lineStyle: { color: '#E2E5ED', type: 'dashed' },
-          data: [{ yAxis: 2025, label: { formatter: '现在' } }]
-        }
-      },
       {
         name: seriesLabel,
         type: 'line',
@@ -711,13 +700,7 @@ function renderPredictionChart(city, params) {
         type: 'line',
         data: predYears.map(() => K),
         symbol: 'none',
-        lineStyle: { width: 1.5, color: '#C49B30', type: 'dashed' },
-        markLine: {
-          silent: true,
-          label: { fontSize: 10, formatter: `K=${K.toFixed(0)}万` },
-          lineStyle: { color: '#C49B30', type: 'dashed' },
-          data: [{ yAxis: K }]
-        }
+        lineStyle: { width: 1.5, color: '#C49B30', type: 'dashed' }
       }
     ]
   };
