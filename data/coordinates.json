@@ -1,0 +1,13 @@
+{
+  "cities": [
+    {"city_id": 1, "city_name": "延吉市", "lon": 129.5088, "lat": 42.8913},
+    {"city_id": 2, "city_name": "图们市", "lon": 129.8439, "lat": 42.9680},
+    {"city_id": 3, "city_name": "敦化市", "lon": 128.2322, "lat": 43.3728},
+    {"city_id": 4, "city_name": "珲春市", "lon": 130.3660, "lat": 42.8625},
+    {"city_id": 5, "city_name": "龙井市", "lon": 129.4270, "lat": 42.7663},
+    {"city_id": 6, "city_name": "和龙市", "lon": 129.0108, "lat": 42.5464},
+    {"city_id": 7, "city_name": "汪清县", "lon": 129.7712, "lat": 43.3128},
+    {"city_id": 8, "city_name": "安图县", "lon": 128.8997, "lat": 43.1116},
+    {"city_id": 9, "city_name": "长白山", "lon": 128.0552, "lat": 42.0348}
+  ]
+}
