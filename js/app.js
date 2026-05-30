@@ -55,45 +55,45 @@ const EMBEDDED_DATA = {
       { name: '延吉冷面', desc: '朝鲜族传统冷面，荞麦面配冰镇牛肉汤', icon: '🍜' },
       { name: '延边辣白菜', desc: '朝鲜族传统泡菜，酸辣爽脆', icon: '🥬' },
       { name: '朝鲜族打糕', desc: '糯米捶打制成，口感Q弹', icon: '🍡' },
-      { name: '延吉烤串', desc: '朝鲜族风味烤肉串', icon: '🍢' }
+      { name: '延吉烤串', desc: '朝鲜族风味烤肉串', icon: '🍢', url: 'https://baike.baidu.com/item/%E7%83%A4%E4%B8%B2' }
     ],
     2: [
-      { name: '图们江鱼', desc: '图们江野生江鱼，肉质鲜美', icon: '🐟' },
+      { name: '图们江鱼', desc: '图们江野生江鱼，肉质鲜美', icon: '🐟', url: 'https://baike.baidu.com/item/%E5%9B%BE%E4%BB%AC%E6%B1%9F' },
       { name: '朝鲜族米肠', desc: '糯米灌制的传统米肠', icon: '🌭' },
-      { name: '口岸纪念品', desc: '中朝边境特色纪念品', icon: '🎁' }
+      { name: '口岸纪念品', desc: '中朝边境特色纪念品', icon: '🎁', url: 'https://baike.baidu.com/item/%E5%9B%BE%E4%BB%AC%E5%8F%A3%E5%B2%B8' }
     ],
     3: [
       { name: '敦化煎饼', desc: '传统手工摊制煎饼', icon: '🥞' },
-      { name: '人参制品', desc: '长白山人参系列产品', icon: '🌿' },
-      { name: '六鼎山素斋', desc: '佛家素斋食品', icon: '🥗' },
-      { name: '敦化大豆酱', desc: '传统发酵大豆酱', icon: '🫘' }
+      { name: '人参制品', desc: '长白山人参系列产品', icon: '🌿', url: 'https://baike.baidu.com/item/%E4%BA%BA%E5%8F%82' },
+      { name: '六鼎山素斋', desc: '佛家素斋食品', icon: '🥗', url: 'https://baike.baidu.com/item/%E5%BB%B6%E8%BE%B9%E6%9C%9D%E9%B2%9C%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E%E5%85%AD%E9%BC%8E%E5%B1%B1%E6%96%87%E5%8C%96%E6%97%85%E6%B8%B8%E5%8C%BA' },
+      { name: '敦化小粒黄', desc: '传统发酵大豆酱', icon: '🫘', url: 'https://baike.baidu.com/item/%E5%B0%8F%E7%B2%92%E9%BB%84' }
     ],
     4: [
-      { name: '俄罗斯商品', desc: '珲春口岸进口食品与工艺品', icon: '🎪' },
-      { name: '珲春海鲜', desc: '日本海新鲜海产品', icon: '🦀' },
+      { name: '俄罗斯商品', desc: '珲春口岸进口食品与工艺品', icon: '🎪', url: 'https://baike.baidu.com/item/%E4%BF%84%E7%BD%97%E6%96%AF' },
+      { name: '珲春海鲜', desc: '日本海新鲜海产品', icon: '🦀', url: 'https://www.jl.gov.cn/yaowen/202508/t20250811_3488815.html' },
       { name: '朝鲜族服饰', desc: '传统韩服租赁与定制', icon: '👗' },
-      { name: '防川纪念币', desc: '一眼望三国主题纪念币', icon: '🪙' }
+      { name: '防川纪念币', desc: '一眼望三国主题纪念币', icon: '🪙', url: 'https://baike.baidu.com/item/%E9%98%B2%E5%B7%9D%E9%A3%8E%E6%99%AF%E5%90%8D%E8%83%9C%E5%8C%BA' }
     ],
     5: [
       { name: '龙井苹果梨', desc: '延边特产水果，甘甜多汁', icon: '🍐' },
-      { name: '琵岩山特产', desc: '琵岩山景区周边特产', icon: '⛰️' },
-      { name: '龙井大米', desc: '海兰江流域优质大米', icon: '🍚' }
+      { name: '琵岩山特产', desc: '琵岩山景区周边特产', icon: '⛰️', url: 'https://baike.baidu.com/item/%E7%90%B5%E5%B2%A9%E5%B1%B1%E9%A3%8E%E6%99%AF%E5%8C%BA' },
+      { name: '龙井大米', desc: '海兰江流域优质大米', icon: '🍚', url: 'https://baike.baidu.com/item/%E5%BB%B6%E8%BE%B9%E5%A4%A7%E7%B1%B3' }
     ],
     6: [
-      { name: '和龙松茸', desc: '长白山野生松茸', icon: '🍄' },
-      { name: '光东村大米', desc: '有机大米', icon: '🌾' },
-      { name: '和龙蜂蜜', desc: '长白山林区天然蜂蜜', icon: '🍯' }
+      { name: '和龙松茸', desc: '长白山野生松茸', icon: '🍄', url: 'https://baike.baidu.com/item/%E6%9D%BE%E8%8C%B8%E8%8F%8C' },
+      { name: '光东村大米', desc: '有机大米', icon: '🌾', url: 'https://baike.baidu.com/item/%E5%85%89%E4%B8%9C%E6%9D%91' },
+      { name: '和龙黑木耳', desc: '长白山林区天然黑木耳', icon: '🪸', url: 'https://baike.baidu.com/item/%E9%BB%91%E6%9C%A8%E8%80%B3' }
     ],
     7: [
       { name: '汪清黑木耳', desc: '国家地理标志产品', icon: '🪸' },
-      { name: '汪清松子', desc: '长白山红松松子', icon: '🥜' },
-      { name: '汪清山野菜', desc: '野生蕨菜、刺嫩芽', icon: '🥬' }
+      { name: '汪清松子', desc: '长白山红松松子', icon: '🥜', url: 'https://baike.baidu.com/item/%E6%9D%BE%E5%AD%90' },
+      { name: '汪清山野菜', desc: '野生蕨菜、刺嫩芽', icon: '🥬', url: 'http://www.wangqing.gov.cn/xwzx/wqyw/202407/t20240719_463118.html' }
     ],
     8: [
-      { name: '安图矿泉水', desc: '长白山天然矿泉水', icon: '💧' },
-      { name: '安图蓝莓', desc: '长白山野生蓝莓', icon: '🫐' },
-      { name: '安图林蛙油', desc: '长白山林蛙提取物', icon: '🧪' },
-      { name: '安图蜂蜜', desc: '椴树蜜，东北特产', icon: '🍯' }
+      { name: '安图矿泉水', desc: '长白山天然矿泉水', icon: '💧', url: 'https://baike.baidu.com/item/%E5%AE%89%E5%9B%BE%E9%95%BF%E7%99%BD%E5%B1%B1%E5%A4%A9%E7%84%B6%E7%9F%BF%E6%B3%89%E6%B0%B4%E4%BA%A7%E4%B8%9A%E5%9B%AD%E5%8C%BA' },
+      { name: '安图蓝莓', desc: '长白山野生蓝莓', icon: '🫐', url: 'http://www.antu.gov.cn/xq/cyat/attc/syl/201912/t20191203_24602.html' },
+      { name: '安图林蛙油', desc: '长白山林蛙提取物', icon: '🧪', url: 'http://www.antu.gov.cn/xq/cyat/attc/yyl/201912/t20191203_24614.html' },
+      { name: '安图蜂蜜', desc: '椴树蜜，东北特产', icon: '🍯', url: 'http://www.antu.gov.cn/xq/cyat/attc/syl/201912/t20191203_24612.html' }
     ],
     9: [
       { name: '长白山人参', desc: '野山参及制品', icon: '🌿' },
@@ -235,11 +235,15 @@ async function initMap() {
       resizeEnable: true
     });
 
-    // 添加标记
+    // 添加标记和文字标签
     data.cities.forEach(city => {
       const marker = createMarker(city);
       STATE.markers[city.city_id] = marker;
       STATE.map.add(marker);
+
+      // 在标记上方显示地名
+      const label = createLabel(city);
+      STATE.map.add(label);
     });
 
     console.log('✅ 高德地图初始化成功');
@@ -301,12 +305,43 @@ function createMarker(city) {
     position: [city.lon, city.lat],
     content: markerContent,
     offset: new AMap.Pixel(-size/2, -size/2),
-    title: city.city_name
+    title: city.city_name,
+    zIndex: 10
   });
 
   marker.on('click', () => selectCity(city.city_id));
 
   return marker;
+}
+
+function createLabel(city) {
+  const v = city.visitor_2025;
+  let color;
+  if (v >= 800) color = '#DA251D';
+  else if (v >= 400) color = '#E8751A';
+  else if (v >= 200) color = '#C49B30';
+  else if (v >= 100) color = '#3B9C5C';
+  else color = '#2E75B6';
+
+  const label = new AMap.Text({
+    position: [city.lon, city.lat],
+    text: city.city_name,
+    offset: new AMap.Pixel(-30, -38),
+    style: {
+      'font-size': '12px',
+      'font-weight': '700',
+      'color': color,
+      'background-color': 'rgba(255,255,255,0.85)',
+      'padding': '2px 6px',
+      'border-radius': '3px',
+      'font-family': 'PingFang SC, Microsoft YaHei, SimHei, sans-serif',
+      'white-space': 'nowrap',
+      'text-shadow': '0 0 2px #FFF'
+    },
+    zIndex: 5
+  });
+
+  return label;
 }
 
 // ==================== 城市选择 ====================
@@ -363,15 +398,18 @@ function updateLeftPanel(cityId) {
   const products = data.products[cityId] || [];
   const productGrid = document.getElementById('productGrid');
   if (products.length > 0) {
-    productGrid.innerHTML = products.map(p => `
-      <div class="product-item">
+    productGrid.innerHTML = products.map(p => {
+      var linkUrl = p.url || ('https://baike.baidu.com/item/' + encodeURIComponent(p.name));
+      return `
+      <div class="product-item" onclick="window.open('${linkUrl}', '_blank')" title="点击查看「${p.name}」详情">
         <span class="product-icon">${p.icon || '📦'}</span>
         <div class="product-info">
           <div class="product-name">${p.name}</div>
           <div class="product-desc">${p.desc}</div>
         </div>
+        <span class="product-arrow">🔗</span>
       </div>
-    `).join('');
+    `;}).join('');
   } else {
     productGrid.innerHTML = '<div class="product-empty">暂无特色商品数据</div>';
   }
@@ -492,9 +530,16 @@ function renderPredictionChart(city, params) {
   const option = {
     tooltip: {
       trigger: 'axis',
+      confine: false,
+      extraCssText: 'max-width:220px;white-space:normal;z-index:999;',
       formatter: function(ps) {
-        return `${ps[0].axisValue}年<br/>` +
-          ps.map(p => `${p.marker} ${p.seriesName}: <strong>${p.value.toFixed(1)}</strong> 万人次`).join('<br/>');
+        var html = '<strong>' + ps[0].axisValue + '年</strong><br/>';
+        var items = [];
+        for (var i = 0; i < ps.length; i++) {
+          items.push(ps[i].marker + ' ' + ps[i].seriesName + '<br/>' +
+                     '&nbsp;&nbsp;&nbsp;&nbsp;<strong>' + ps[i].value.toFixed(1) + '</strong> 万人次');
+        }
+        return html + items.join('<br/><br/>');
       }
     },
     legend: {
