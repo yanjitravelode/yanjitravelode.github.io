@@ -39,15 +39,15 @@ const EMBEDDED_DATA = {
 
   // 拟合参数（从 Python 模型运行后更新）
   modelParams: {
-    1: { r: 0.2927, K: 2164, r2: 0.960, year80: null, hotness: 56.3 },
-    2: { r: 1.3616, K: 291,  r2: 0.984, year80: null, hotness: 27.2 },
-    3: { r: 1.5000, K: 878,  r2: 0.999, year80: null, hotness: 78.5 },
-    4: { r: 0.3851, K: 12000,r2: 0.938, year80: null, hotness: 69.8 },
-    5: { r: 0.8042, K: 530,  r2: 0.756, year80: null, hotness: 18.3 },
-    6: { r: 0.4917, K: 7443, r2: 0.957, year80: null, hotness: 75.5 },
-    7: { r: 0.8856, K: 172,  r2: 0.889, year80: null, hotness: 17.7 },
-    8: { r: 1.2849, K: 1090, r2: 0.971, year80: null, hotness: 63.9 },
-    9: { r: 0.0409, K: 4097, r2: 0.106, year80: null, hotness: 33.8 }
+    1: { r: 0.2783, K: 2320.0, r2: 0.960, year80: 2030, hotness: 82.1 },
+    2: { r: 0.4941, K: 546.7,  r2: 0.856, year80: 2028, hotness: 95.2 },
+    3: { r: 0.4819, K: 1959.4, r2: 0.915, year80: 2028, hotness: 94.5 },
+    4: { r: 0.4239, K: 2400.0, r2: 0.869, year80: 2030, hotness: 91.0 },
+    5: { r: 0.3931, K: 912.7,  r2: 0.673, year80: 2028, hotness: 89.6 },
+    6: { r: 0.4989, K: 2118.8, r2: 0.895, year80: 2029, hotness: 95.3 },
+    7: { r: 0.5836, K: 335.9,  r2: 0.797, year80: 2028, hotness: 99.9 },
+    8: { r: 0.4918, K: 2099.7, r2: 0.875, year80: 2028, hotness: 95.0 },
+    9: { r: 0.0444, K: 797.7,  r2: 0.094, year80: null, hotness: 53.5 }
   },
 
   products: {
@@ -641,7 +641,7 @@ function renderPredictionChart(city, params) {
   var methodNames={1:'Euler',2:'RK2中点',3:'RK3 Kutta',4:'RK4'};
   var methodName=methodNames[method]||'RK4';
   var stepLabel=hMonths+'月步长';
-  var seriesLabel='RK预测('+methodName+','+stepLabel+')';
+  var seriesLabel='RK预测';
 
   var option = {
     tooltip: {
