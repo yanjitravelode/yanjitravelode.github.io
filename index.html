@@ -1,7 +1,139 @@
 <!DOCTYPE html>
-<html>
-<head><title>我的项目</title></head>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>延边州旅游客流预测大屏 | 数智边疆</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 高德地图 JS API -->
+  <script src="https://webapi.amap.com/maps?v=2.0&key=d055d8355f04166c43662fa6b13c3106"></script>
+  <!-- ECharts -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+</head>
 <body>
-  <h1>Hello, GitHub Pages</h1>
+  <!-- 顶部标题栏 -->
+  <header class="header">
+    <div class="header-left">
+      <span class="header-icon">🏔️</span>
+    </div>
+    <div class="header-center">
+      <h1>延边朝鲜族自治州旅游客流预测与产业赋能平台</h1>
+      <p class="header-subtitle">基于竞争Lotka-Volterra模型的数智化旅游决策支持系统</p>
+    </div>
+    <div class="header-right">
+      <span class="header-badge">数智边疆 · 东北振兴</span>
+    </div>
+  </header>
+
+  <!-- 主内容区：三栏布局 -->
+  <main class="main-container">
+
+    <!-- ========== 左栏：商业赋能区 ========== -->
+    <aside class="panel panel-left" id="panelLeft">
+      <div class="panel-header">
+        <h2>🛍️ 商业赋能</h2>
+        <span class="panel-city-label" id="leftCityLabel">请在地图上选择市/县</span>
+      </div>
+
+      <!-- 地点基本信息 -->
+      <div class="info-card" id="cityInfoCard">
+        <div class="info-card-placeholder">👆 点击地图上的标记开始探索</div>
+      </div>
+
+      <!-- 特色商品 -->
+      <div class="section-title">📦 特色商品</div>
+      <div class="product-grid" id="productGrid">
+        <div class="product-empty">选择市/县后展示特色商品</div>
+      </div>
+
+      <!-- 竞争关系 -->
+      <div class="section-title">⚔️ 竞争与合作关系</div>
+      <div class="competition-list" id="competitionList">
+        <div class="product-empty">选择市/县后分析竞争态势</div>
+      </div>
+    </aside>
+
+    <!-- ========== 中栏：地图主视区 ========== -->
+    <section class="panel panel-center" id="panelCenter">
+      <div id="mapContainer"></div>
+      <!-- 地图底部图例 -->
+      <div class="map-legend">
+        <div class="legend-item"><span class="legend-dot" style="background:#DA251D;"></span> 游客量 ≥ 800万</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#E8751A;"></span> 400-800万</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#F0B90B;"></span> 200-400万</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#3B9C5C;"></span> 100-200万</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#2E75B6;"></span> &lt;100万</div>
+      </div>
+      <!-- 地图底部数据栏 -->
+      <div class="map-stats-bar" id="mapStatsBar">
+        <div class="stat-item">
+          <span class="stat-value" id="statTotal2025">--</span>
+          <span class="stat-label">2025年全州游客(万)</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" id="statGrowth">--</span>
+          <span class="stat-label">年增速</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" id="statHottest">--</span>
+          <span class="stat-label">热度最高市/县</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 右栏：数智预测区 ========== -->
+    <aside class="panel panel-right" id="panelRight">
+      <div class="panel-header">
+        <h2>📈 数智预测</h2>
+        <span class="panel-city-label" id="rightCityLabel">请在地图上选择市/县</span>
+      </div>
+
+      <!-- 预测图表 -->
+      <div class="section-title">📊 客流预测曲线</div>
+      <div class="chart-container" id="chartContainer">
+        <div class="chart-placeholder">📊<br/>选择市/县后展示预测图表</div>
+      </div>
+      <div class="chart-stats" id="chartStats">
+        <div class="mini-stat">
+          <span class="mini-value" id="statK">--</span>
+          <span class="mini-label">环境容量 K</span>
+        </div>
+        <div class="mini-stat">
+          <span class="mini-value" id="statR">--</span>
+          <span class="mini-label">增长率 r</span>
+        </div>
+        <div class="mini-stat">
+          <span class="mini-value" id="statYear">--</span>
+          <span class="mini-label">达到80%容量年份</span>
+        </div>
+        <div class="mini-stat">
+          <span class="mini-value" id="statHotness">--</span>
+          <span class="mini-label">热度指数</span>
+        </div>
+      </div>
+
+      <!-- 旅游攻略 -->
+      <div class="section-title">🗺️ 旅游攻略</div>
+      <div class="guide-card" id="guideCard">
+        <div class="product-empty">选择市/县后展示旅游攻略</div>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- 底部信息栏 -->
+  <footer class="footer">
+    <span>数据来源：延边州统计局 · 吉林省统计公报</span>
+    <span>模型：Lotka-Volterra 竞争模型 · RK45 数值求解</span>
+    <span>© 2026 数智边疆项目组</span>
+  </footer>
+
+  <!-- 加载动画 -->
+  <div class="loading-overlay" id="loadingOverlay" style="display:none;">
+    <div class="loading-spinner"></div>
+    <p>模型计算中...</p>
+  </div>
+
+  <script src="js/app.js"></script>
 </body>
 </html>
